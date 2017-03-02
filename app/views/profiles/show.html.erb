@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<% @results.each do |repo| %>
+<%= link_to repo["name"], "https://github.com/LorenGlenn/" + repo["name"] %>
+<hr>
+<% end %>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
